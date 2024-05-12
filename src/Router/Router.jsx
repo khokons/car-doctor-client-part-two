@@ -7,6 +7,11 @@ import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import BookService from "../Pages/BookService/BookService";
 import Bookings from "../Pages/Booking/Bookings";
 import PrivateRoute from "./PrivateRoute";
+import AboutRoute from "../Pages/Home/About/AboutRoute";
+import Services from "../Pages/Home/Services/Services";
+import Blog from "../Pages/Home/Blog/Blog";
+import Contact from "../Pages/Home/Home/Contact/Contact";
+
 
 
 const router = createBrowserRouter([
@@ -19,6 +24,23 @@ const router = createBrowserRouter([
             path: '/',
             element: <Home></Home>
         },
+        {
+          path: '/about',
+          element: <AboutRoute></AboutRoute>
+        },
+        {
+          path: '/services',
+          element: <Services></Services>
+        },
+        {
+          path: '/blog',
+          element: <PrivateRoute><Blog></Blog></PrivateRoute>
+        },
+        {
+          path: '/contact',
+          element: <Contact></Contact>
+        },
+
         {
           path: '/login',
           element: <Login></Login>

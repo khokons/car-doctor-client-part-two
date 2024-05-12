@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import ServicesCard from "./ServicesCard";
 
+
 const Services = () => {
   const [services, setServices] = useState([]);
 
@@ -13,9 +14,9 @@ const Services = () => {
 
   return (
     <div className="text-center">
-      <h3 className="text-orange-500">Services</h3>
-      <h1 className="text-3xl font-bold">Our Service Area</h1>
-      <p>
+      <h3 class="text-orange-500 text-2xl">Services</h3>
+      <h1 className="text-[#151515] font-sans text-5xl font-bold leading-normal">Our Service Area</h1>
+      <p className="text-center font-inter text-base font-normal leading-7 capitalize">
         the majority have suffered alteration in some form, by injected humour,
         or randomised <br /> words which do not look even slightly believable.
       </p>
@@ -25,6 +26,7 @@ const Services = () => {
         services.map(service => <ServicesCard key={service._id} service={service}></ServicesCard>)
     }
       </div>
+
     </div>
   );
 };
