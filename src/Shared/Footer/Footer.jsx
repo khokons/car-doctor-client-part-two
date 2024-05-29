@@ -1,34 +1,31 @@
-import logo from '../../assets/logo.svg'
+import { Link } from 'react-router-dom';
+import logo from '../../assets/logo.svg';
 
 const Footer = () => {
   return (
-    <footer className="footer p-10 bg-base-200 text-base-content">
-    <aside>
-     <img src={logo} alt="" />
-      <p>Edwin Diaz is a software and web <br /> technologies engineer, a life coach <br /> trainer who is also a serial .</p>
-    
-    </aside> 
-    <nav>
-      <h6 className="footer-title">Services</h6> 
-      <a className="link link-hover">Branding</a>
-      <a className="link link-hover">Design</a>
-      <a className="link link-hover">Marketing</a>
-      <a className="link link-hover">Advertisement</a>
-    </nav> 
-    <nav>
-      <h6 className="footer-title">Company</h6> 
-      <a className="link link-hover">About us</a>
-      <a className="link link-hover">Contact</a>
-      <a className="link link-hover">Jobs</a>
-      <a className="link link-hover">Press kit</a>
-    </nav> 
-    <nav>
-      <h6 className="footer-title">Legal</h6> 
-      <a className="link link-hover">Terms of use</a>
-      <a className="link link-hover">Privacy policy</a>
-      <a className="link link-hover">Cookie policy</a>
-    </nav>
-  </footer>
+    <footer className="footer p-10 bg-base-200 text-base-content flex flex-col md:flex-row justify-between">
+      <aside className="mb-6 md:mb-0 md:mr-6">
+        <img src={logo} alt="Company Logo" className="mb-4" />
+        <p>Edwin Diaz is a software and web<br />technologies engineer, a life coach<br />trainer who is also a serial entrepreneur.</p>
+      </aside>
+      <nav className="mb-6 md:mb-0 md:mr-6">
+        <h6 className="footer-title">About</h6>
+        <Link to='/' className="link link-hover">Home</Link>
+        <Link to='/services' className="link link-hover">Service</Link>
+        <Link to='/contact' className="link link-hover">Contact</Link>
+      </nav>
+      <nav className="mb-6 md:mb-0 md:mr-6">
+        <h6 className="footer-title">Company</h6>
+        <Link to='' className="link link-hover">Why Car Doctor?</Link>
+        <Link to='/about' className="link link-hover">About</Link>
+      </nav>
+      <nav className="mb-6 md:mb-0">
+        <h6 className="footer-title">Support</h6>
+        <Link to='' className="link link-hover">Support Center</Link>
+        <Link to='' className="link link-hover">Feedback</Link>
+        <Link to='' className="link link-hover">Accessibility</Link>
+      </nav>
+    </footer>
   );
 };
 

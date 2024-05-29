@@ -12,7 +12,7 @@ const Home = () => {
             <About></About>
             <Services></Services>
             <MoreService></MoreService>
-            <h2>This is Home</h2>
+
         </div>
     );
 };
