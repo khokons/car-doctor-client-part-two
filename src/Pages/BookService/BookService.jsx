@@ -26,7 +26,7 @@ const BookService = () => {
 
         console.log(booking)
 
-        fetch('http://localhost:5000/bookingsTwo',{
+        fetch('https://car-doctor-server-khokons-c1e583e9.vercel.app/bookingsTwo',{
           method: 'POST',
           headers:{
               'content-type': 'application/json'
