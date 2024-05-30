@@ -60,11 +60,11 @@ const handleBookingConfirm = id => {
 
   return (
     <div>
-      <h2 className="text-5xl">Your bookings: {bookings.length}</h2>
-      <div className="overflow-x-auto w-full">
+      <h2 className="text-5xl text-center">Your Bookings : {bookings.length}</h2>
+      <div className="overflow-x-auto w-full mt-10">
         <table className="table w-full">
           {/* head */}
-          <thead>
+          <thead className="text-2xl font-bold">
             <tr>
               <th>
                 <label>

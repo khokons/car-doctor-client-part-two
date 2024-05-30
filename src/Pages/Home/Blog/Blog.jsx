@@ -114,11 +114,13 @@ const PostForm = ({ onSubmit }) => {
 
     return (
         <form onSubmit={handleSubmit} className="mb-4">
-            <input type="text" name="title" placeholder="Title" value={formData.title} onChange={handleInputChange} className="block w-full border rounded py-2 px-3 mb-2" required />
-            <input type="text" name="image" placeholder="Image URL (optional)" value={formData.image} onChange={handleInputChange} className="block w-full border rounded py-2 px-3 mb-2" />
-            <textarea name="story" placeholder="Your story..." value={formData.story} onChange={handleInputChange} className="block w-full border rounded py-2 px-3 mb-2" required />
+        <input type="text" name="title" placeholder="Title" value={formData.title} onChange={handleInputChange} className="block w-full border rounded py-2 px-3 mb-2" required />
+        <input type="text" name="image" placeholder="Image URL (optional)" value={formData.image} onChange={handleInputChange} className="block w-full border rounded py-2 px-3 mb-2" />
+        <textarea name="story" placeholder="Your story..." value={formData.story} onChange={handleInputChange} className="block w-full border rounded py-2 px-3 mb-2" required />
+        <div className="flex justify-center">
             <button type="submit" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Post</button>
-        </form>
+        </div>
+    </form>
     );
 };
 

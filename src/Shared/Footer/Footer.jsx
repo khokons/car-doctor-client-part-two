@@ -23,7 +23,7 @@ const Footer = () => {
         <h6 className="footer-title">Support</h6>
         <Link to='' className="link link-hover">Support Center</Link>
         <Link to='' className="link link-hover">Feedback</Link>
-        <Link to='' className="link link-hover">Accessibility</Link>
+        <Link className="link link-hover">Accessibility</Link>
       </nav>
     </footer>
   );

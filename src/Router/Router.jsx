@@ -11,6 +11,7 @@ import AboutRoute from "../Pages/Home/About/AboutRoute";
 import Services from "../Pages/Home/Services/Services";
 import Blog from "../Pages/Home/Blog/Blog";
 import Contact from "../Pages/Home/Home/Contact/Contact";
+import Appoinment from "../Pages/AppoinMent/Appoinment";
 
 
 
@@ -26,7 +27,7 @@ const router = createBrowserRouter([
         },
         {
           path: '/about',
-          element: <AboutRoute></AboutRoute>
+          element: <PrivateRoute><AboutRoute></AboutRoute></PrivateRoute>
         },
         {
           path: '/services',
@@ -49,6 +50,10 @@ const router = createBrowserRouter([
         {
           path: '/sign',
           element: <Signup></Signup>
+        },
+        {
+          path: '/appoinment',
+          element: <PrivateRoute><Appoinment></Appoinment></PrivateRoute>
         },
 
         {

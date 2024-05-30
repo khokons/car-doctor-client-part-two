@@ -25,7 +25,7 @@ const Navbar = () => {
       {user?.email ? (
         <>
           <li><Link to='/bookings'>My Bookings</Link></li>
-          <li><button onClick={handleLogOut}>Log out</button></li>
+          <li><button onClick={handleLogOut} className="uppercase">Log out</button></li>
         </>
       ) : (
         <li><Link to='/login'>Login</Link></li>
@@ -68,7 +68,7 @@ const Navbar = () => {
         {navLinks}
       </div>
       <div className="navbar-end">
-      <button className="btn btn-outline btn-warning hover:bg-yellow-500 hover:text-gray-900 transition duration-300">Appointment</button>
+      <button className="btn btn-outline btn-warning hover:bg-yellow-500 hover:text-gray-900 transition duration-300"><Link to='/appoinment'>Appointment</Link></button>
       </div>
     </div>
   );

@@ -1,9 +1,9 @@
-
+import errorImg from '../../assets/icons/Frame.png';
 
 const ErrorPage = () => {
     return (
         <div className="flex justify-center items-center h-screen">
-            <h2 className="text-6xl text-red-500 ">I Have No Data Found</h2>
+            <img src={errorImg} alt="" />
         </div>
     );
 };
